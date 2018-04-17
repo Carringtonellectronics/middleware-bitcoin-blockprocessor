@@ -52,7 +52,11 @@ module.exports = {
   node: {
     zmq: process.env.ZMQ || 'tcp://127.0.0.1:43332',
     network: process.env.NETWORK || 'regtest',
-    ipcName: process.env.IPC_NAME || 'bitcoin',
-    ipcPath: process.env.IPC_PATH || '/tmp/'
+    ipcName: process.env.IPC_NAME || 'bitcoin'
+  },
+  http: {
+    uri: process.env.URI || 'http://localhost:8332',
+    user: process.env.USER_NAME || '',
+    password: process.env.PASSWORD || ''
   }
 };
